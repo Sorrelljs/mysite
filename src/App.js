@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import Navbar from './components/navbar';
+import Hero from './components/Hero';
+import { Canvas } from '@react-three/fiber';
+import Tourus from './components/tourus3d';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Work from './page/Work';
+import Home from './page/Home';
 
-export default App;
+
+
+export default function App(){
+
+
+
+  
+return (
+<>
+
+  <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Work />} />
+        </Routes>
+      </BrowserRouter>
+
+
+</>
+);
+};
