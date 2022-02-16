@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import Tourus from '../components/tourus3d';
 
 
+
 export default function Home(){
   
 return (
@@ -17,6 +18,8 @@ return (
   <Navbar/>
   <Hero/>
   </div>
+
+  
 
 </>
 );

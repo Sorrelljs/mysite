@@ -18,6 +18,7 @@ function Porfolio({title, message, tags, github, website, cover}) {
 
 
       {/* portfolio  */}
+      
        <div className={`portfolio--container ${cover}`}>
         <h4 className="portfolio--title">{title}</h4>
         <p class="portfolio--para">{message}</p>

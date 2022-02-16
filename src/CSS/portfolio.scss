@@ -15,29 +15,38 @@
     height: 200px;
     transition: transform .2s;
     box-shadow: 0 16px 11px -10px #888;
+    transition: background-color 2s, transform 1.5s;
 
 }
 
 .cover--1 {
-    background-color: blue;
+    background-image:url('../assets/projects/karakata/hom1.png');
     background-position: 50%;
     background-repeat: no-repeat;
+    
 }
 
 .cover--2 {
+    background-image:url('../assets/projects/magic-match/magic-match1.png');
 
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
 .cover--3 {
-
+    background-image:url('../assets/projects/motohut/moto1.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.cover--4 {
+    background-image:url('../assets/projects/insta/instanews-desktop-initial.png');
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
 
-.portfolio--container:hover{
+.portfolio--container:hover {
+
     background-color: #F8F0E3;
     background-image: none;
     content-visibility: visible;
@@ -75,6 +84,8 @@
         border-radius: 50px;
         grid-gap: 15px;
         display: flex;
+        text-decoration: underline;
+
     }
 
     .portfolio--containers {
@@ -92,7 +103,7 @@
     .portfolio--containers {
         display: grid;
         grid-column: auto auto;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         grid-gap: 40px;
         place-items: center;
         justify-content: space-evenly;
@@ -119,6 +130,6 @@
         background-position: 50%;
         background-repeat: no-repeat;
         padding: 10px;
-        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+        // box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     
     }

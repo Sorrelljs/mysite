@@ -20,6 +20,8 @@ export default function Work() {
 
   return (
     <>
+
+    <button><a href="/">BACK</a></button>
     <div className='work'>
       <div className="portfolio--containers">
     <Portfolio 
@@ -53,6 +55,22 @@ export default function Work() {
     github={'https://github.com/Sorrelljs/blog_on_rails'}
     website={'https://github.com/Sorrelljs/blog_on_rails'}
     cover={'cover--4'}
+    />
+    <Portfolio 
+    title='Blogs on Rails'
+    message='A CRUD application. Create an account and make a blog!'
+    tags= {[<DiIcons.DiRuby />, <AiIcons.AiFillHtml5 />]}
+    github={'https://github.com/Sorrelljs/blog_on_rails'}
+    website={'https://github.com/Sorrelljs/blog_on_rails'}
+    cover={'cover--5'}
+    />
+    <Portfolio 
+    title='Blogs on Rails'
+    message='A CRUD application. Create an account and make a blog!'
+    tags= {[<DiIcons.DiRuby />, <AiIcons.AiFillHtml5 />]}
+    github={'https://github.com/Sorrelljs/blog_on_rails'}
+    website={'https://github.com/Sorrelljs/blog_on_rails'}
+    cover={'cover--6'}
     />
     </div>
 
