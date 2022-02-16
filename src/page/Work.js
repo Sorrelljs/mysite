@@ -8,6 +8,7 @@ import * as SiIcons from "react-icons/si";
 import * as FaIcons from "react-icons/fa";
 import * as IoIcons from "react-icons/io";
 import * as DiIcons from "react-icons/di";
+import { useEffect } from 'react';
 
 
 // pages
@@ -17,6 +18,12 @@ import * as DiIcons from "react-icons/di";
 
 export default function Work() {
 
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.body.style.backgroundColor = "#F8F0E3";
+    }, 1000)
+  })
 
   return (
     <>
