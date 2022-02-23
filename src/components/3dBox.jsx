@@ -9,7 +9,7 @@ export default function Box(props) {
     useFrame(() => (mesh.current.rotation.y += 0.01))
     const loader=new THREE.TextureLoader()
     const base=loader.load(Cyber)
-
+    console.log(props)
     return (
       <mesh
         {...props}

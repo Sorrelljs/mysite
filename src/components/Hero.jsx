@@ -6,11 +6,18 @@ import { Canvas } from "@react-three/fiber"
 import { IconContext } from 'react-icons'
 import * as AiIcons from "react-icons/ai";
 import * as SiIcons from "react-icons/si";
+import * as RiIcons from "react-icons/ri";
+import { useState } from 'react';
+
 
 
 
 
 export default function Hero() {
+
+const [contact, setContact] = useState(false)
+
+    
     return ( 
     
         <div class="hero-main" id="hero">
@@ -44,6 +51,11 @@ export default function Hero() {
                 <a href="/portfolio">VISIT MY WORK</a>
                 <span className='home--icons'><SiIcons.SiFurrynetwork /></span>
                 </button>
+            <button className='contact--button' onClick={() => setContact(!false)}>
+                <span>CONTACT</span>
+                <span className='home--icons'><RiIcons.RiContactsFill/></span>
+                </button>
+               { contact && <span className='email--info'><strong>sjsohota@gmail.com</strong></span> }
             </div>
            </div>
         

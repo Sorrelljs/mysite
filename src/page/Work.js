@@ -25,6 +25,7 @@ export default function Work() {
     }, 1000)
   })
 
+
   return (
     <>
 
@@ -33,9 +34,9 @@ export default function Work() {
       <div className="portfolio--containers">
     <Portfolio 
     title='Kara Kata'
-    message='A Nigerian retreat based in Mission, BC. Built in Wordpress from scratch.'
+    message='A Nigerian retreat based in Mission, BC.'
     tags= {[<SiIcons.SiPhp />,<IoIcons.IoLogoCss3 />,<AiIcons.AiFillHtml5 />]}
-    github={'http://karakataafrobeatsociety.com/'}
+    github={''}
     website={'http://karakataafrobeatsociety.com/'}
     cover={'cover--1'}
     />
@@ -48,19 +49,19 @@ export default function Work() {
     cover={'cover--2'}
     />
     <Portfolio 
-    title='CodeCore Drillz'
-    message='A basic CRUD application. Create an account, Log in and create/answer questions.'
-    tags= {[<IoIcons.IoLogoJavascript />, <IoIcons.IoLogoCss3 />]}
-    github={'https://github.com/Sorrelljs/codecore_drillz'}
+    title='Motohut'
+    message='A Shopify site built of symmetry.'
+    tags= {[<FaIcons.FaShopify />, <IoIcons.IoLogoJavascript />, <IoIcons.IoLogoCss3 />]}
+    github={''}
     website={'https://github.com/Sorrelljs/codecore_drillz'}
     cover={'cover--3'}
     />
     <Portfolio 
-    title='Blogs on Rails'
-    message='A CRUD application. Create an account and make a blog!'
+    title='InstaNews'
+    message='Instanews gives you news on demand by category. Using the New York Times API.'
     tags= {[<DiIcons.DiRuby />, <AiIcons.AiFillHtml5 />]}
-    github={'https://github.com/Sorrelljs/blog_on_rails'}
-    website={'https://github.com/Sorrelljs/blog_on_rails'}
+    github={'https://github.com/Sorrelljs/instanews'}
+    website={'https://sorrelljs.github.io/instanews/'}
     cover={'cover--4'}
     />
     <Portfolio 
@@ -68,12 +69,12 @@ export default function Work() {
     message='A CRUD application. Create an account and make a blog!'
     tags= {[<DiIcons.DiRuby />, <AiIcons.AiFillHtml5 />]}
     github={'https://github.com/Sorrelljs/blog_on_rails'}
-    website={'https://github.com/Sorrelljs/blog_on_rails'}
+    website={''}
     cover={'cover--5'}
     />
     <Portfolio 
-    title='Blogs on Rails'
-    message='A CRUD application. Create an account and make a blog!'
+    title='enter here'
+    message='sOME STUFFFSFSFSFS'
     tags= {[<DiIcons.DiRuby />, <AiIcons.AiFillHtml5 />]}
     github={'https://github.com/Sorrelljs/blog_on_rails'}
     website={'https://github.com/Sorrelljs/blog_on_rails'}
