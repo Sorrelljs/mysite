@@ -3,7 +3,6 @@ import '../CSS/hero.scss'
 import ReactTypingEffect from 'react-typing-effect';
 import Box from './3dBox';
 import { Canvas } from "@react-three/fiber"
-import { IconContext } from 'react-icons'
 import * as AiIcons from "react-icons/ai";
 import * as SiIcons from "react-icons/si";
 import * as RiIcons from "react-icons/ri";
