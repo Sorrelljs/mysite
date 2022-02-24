@@ -34,7 +34,7 @@ function Porfolio({title, message, tags, github, website, cover}) {
               { github === '' ? 
               ""
               :
-              <Link  to={github} target="_blank" class="github-ref">Source Code</Link>
+              <a  rel="noreferrer" href={github} target="_blank" class="github-ref">Source Code</a>
               }
               { website === '' ? 
               "" 
