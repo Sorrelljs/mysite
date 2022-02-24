@@ -39,7 +39,7 @@ function Porfolio({title, message, tags, github, website, cover}) {
               { website === '' ? 
               "" 
               :
-              <Link to={website} target="_blank" class="button-4">View</Link>
+              <a  rel="noreferrer" href={website} target="_blank" class="button-4">View</a>
               }
               {/* <Link to="https://www.youtube.com/WebkitCoding" target="_blank"><icon class="fab-fa-youtube"></i>Youtube</Link> */}
             </div> 
