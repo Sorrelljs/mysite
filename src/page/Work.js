@@ -73,11 +73,11 @@ export default function Work() {
     cover={'cover--5'}
     />
     <Portfolio 
-    title='enter here'
-    message='sOME STUFFFSFSFSFS'
-    tags= {[<DiIcons.DiRuby />, <AiIcons.AiFillHtml5 />]}
-    github={'https://github.com/Sorrelljs/blog_on_rails'}
-    website={'https://github.com/Sorrelljs/blog_on_rails'}
+    title='Wildfire Tracker'
+    message='Too many wildfires occuring! I built an app that uses the google maps API/NASA which locates wildfires'
+    tags= {[<FaIcons.FaReact />, <IoIcons.IoLogoCss3 />,<AiIcons.AiFillHtml5 />]}
+    github={'https://github.com/Sorrelljs/wildfire-tracker'}
+    website={'https://sorrelljs.github.io/wildfire-tracker'}
     cover={'cover--6'}
     />
     </div>
