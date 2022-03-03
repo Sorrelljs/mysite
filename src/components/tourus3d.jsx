@@ -4,6 +4,8 @@ import { useFrame } from "@react-three/fiber";
 export default function Tourus(props){
     const ref=useRef(null)
      useFrame(() => (ref.current.rotation.x=ref.current.rotation.y += 0.01))
+
+     
   
     return(
       <mesh visible position={[0, 0, 0]} castShadow ref={ref}>

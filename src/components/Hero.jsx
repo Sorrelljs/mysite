@@ -6,23 +6,31 @@ import { Canvas } from "@react-three/fiber"
 import * as AiIcons from "react-icons/ai";
 import * as SiIcons from "react-icons/si";
 import * as RiIcons from "react-icons/ri";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 
 
-export default function Hero() {
+export default function Hero(state) {
 
 const [contact, setContact] = useState(false)
+const [colorChange, setColorChange] = useState('black')
 
+useEffect(() => {
+    if(state.state === false) {
+        setColorChange('red')
+    } else {
+        setColorChange('black')
+    }
+}, [state.state])
     
     return ( 
     
         <div class="hero-main" id="hero">
-            
            <div className="heading-section">
            <div className="intro">
+          { state.state ?      
            <ReactTypingEffect
         text={["Hello.", "I am Sorrell.","I am a programmer.","I am a writer.","I am a developer."]}
         speed={100}
@@ -33,9 +41,20 @@ const [contact, setContact] = useState(false)
         displayTextRenderer={(text, i) => {
           return (<p className="name">{text}</p>)}}        
       />
-            
+      :
+           <ReactTypingEffect
+        text={["Hello.", "I am Sorrell.","I am a programmer.","I am a writer.","I am a developer."]}
+        speed={100}
+        typingDelay={1000}
+        eraseDelay={1000}
+        eraseSpeed={100}
+        cursorRenderer={cursor => <h1 className="cursor">{cursor}</h1>}
+        displayTextRenderer={(text, i) => {
+          return (<p className="name" style={{color:"red"}}>{text}</p>)}}        
+      />
+        }
            </div>
-
+                
            <h4 className="about">
                A programmer/Writer/Student/Learner
            </h4> 
@@ -54,12 +73,13 @@ const [contact, setContact] = useState(false)
                 <span>CONTACT</span>
                 <span className='home--icons'><RiIcons.RiContactsFill/></span>
                 </button>
-               { contact && <span className='email--info'><strong>sjsohota@gmail.com</strong></span> }
+               { contact && <span className='email--info' style={{color:colorChange}}><strong>sjsohota@gmail.com</strong></span> }
+               {/* If state.state is false style={{color: "red"}} */}
             </div>
            </div>
         
            <Canvas className="box-object">
-               <Box/>
+               <Box state={state}/>
 
                </Canvas>
 

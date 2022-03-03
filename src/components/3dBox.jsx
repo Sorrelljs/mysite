@@ -9,7 +9,7 @@ export default function Box(props) {
     useFrame(() => (mesh.current.rotation.y += 0.01))
     const loader=new THREE.TextureLoader()
     const base=loader.load(Cyber)
-    console.log(props)
+
     return (
       <mesh
         {...props}
@@ -18,7 +18,18 @@ export default function Box(props) {
     >
         <sphereBufferGeometry args={[1.4, 60, 60 ]} />
 
-        <meshBasicMaterial attach="material" map={base} color="green"  />
+   { props.state.state ?
+        <meshBasicMaterial 
+        attach="material" 
+        map={base} 
+        color="green"  />
+        :
+        <meshBasicMaterial 
+        attach="material" 
+        map={base} 
+        color="red"  />
+
+}
 
         </mesh>
     )
