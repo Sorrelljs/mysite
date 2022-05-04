@@ -41,6 +41,14 @@ export default function Work() {
     cover={'cover--1'}
     />
     <Portfolio 
+    title='High Road Motorsports'
+    message='Building a live inventory using Lightspeed integrated API'
+    tags= {[<SiIcons.SiPhp />,<IoIcons.IoLogoCss3 />,<AiIcons.AiFillHtml5 />]}
+    github={''}
+    website={''}
+    cover={'cover--7'}
+    />
+    <Portfolio 
     title='Magic Match'
     message='A medieval guessing game. Match a pair to win!'
     tags= {[<FaIcons.FaReact />, <IoIcons.IoLogoCss3 />,<AiIcons.AiFillHtml5 />]}
